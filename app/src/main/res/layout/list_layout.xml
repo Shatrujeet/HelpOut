@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+<TextView
+    android:layout_width="240dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/blue"
+    android:textColor="@color/white"
+    android:typeface="serif"
+    android:textSize="20dp"
+    android:gravity="center_vertical"
+    android:id="@+id/textViewEventName"/>
+<TextView
+    android:layout_width="64dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/blue"
+    android:textSize="20dp"
+    android:gravity="center_vertical"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:typeface="serif"
+    android:layout_toEndOf="@id/textViewEventName"
+    android:layout_marginLeft="1dp"
+    android:id="@+id/textViewEventTime"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="4dp"
+    android:layout_toEndOf="@id/textViewEventTime"
+    android:background="@color/white"
+    android:layout_marginLeft="1dp"
+    android:textSize="20dp"
+    android:textColor="#FF0000"
+    android:text="@string/rsvp"
+    android:id="@+id/buttonRSVP"/>
+
+<TextView
+    android:layout_width="305dp"
+    android:layout_height="48dp"
+    android:layout_below="@id/textViewEventName"
+    android:background="@color/white"
+    android:textColor="@color/blue"
+    android:textSize="18dp"
+    android:id="@+id/textViewAddress"
+    android:gravity="center_vertical"
+    android:textAlignment="center"
+    />
+
+<Button
+    android:layout_width="match_parent"
+    android:id="@+id/buttonMaps"
+    android:layout_height="48dp"
+    android:background="@mipmap/maps"
+    android:layout_below="@+id/textViewEventTime"
+    android:layout_toEndOf="@id/textViewAddress" />
+</RelativeLayout>

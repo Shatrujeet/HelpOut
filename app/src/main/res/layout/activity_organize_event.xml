@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="itp341.naruka.shatrujeet.finalprojectnarukashatrujeet.OrganizeEvent">
+
+
+<EditText
+    android:layout_width="192dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="48dp"
+    android:id="@+id/editTextCode"
+    android:hint="@string/hint1"
+    android:textStyle="italic"
+    android:textColorHint="@color/blue"
+    android:layout_marginTop="144dp"/>
+
+<Button
+    android:layout_width="192dp"
+    android:layout_height="48dp"
+    android:background="@color/blue"
+    android:textColor="@color/white"
+    android:typeface="serif"
+    android:text="@string/checkAttendees"
+    android:textSize="16dp"
+    android:layout_alignStart="@id/editTextCode"
+    android:layout_below="@id/editTextCode"
+    android:id="@+id/buttonCheck"/>
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:typeface="serif"
+        android:text="@string/deleteEvent"
+        android:textSize="16dp"
+        android:layout_alignStart="@id/editTextCode"
+        android:layout_below="@id/buttonCheck"
+        android:id="@+id/buttonRemoveEvent"/>
+    <Button
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:typeface="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:text="@string/createEvent"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonCreate"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/noEvent"
+    android:textColor="@color/blue"
+    android:textAlignment="center"
+    android:textSize="20dp"
+    android:typeface="serif"
+    android:layout_above="@id/buttonCreate"/>
+
+
+
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Final.Project.naruka.shatrujeet</string>
+    <string name="app">HelpOut</string>
+    <string name="organize">Organize Events</string>
+    <string name="find">Find events</string>
+    <string name="checkAttendees">Check Attendees</string>
+    <string name="hint1">Unique code for event</string>
+    <string name="createEvent">Create New Event</string>
+    <string name="uniqueCode">Unique Code </string>
+    <string name="hint2">Enter Code to identify event </string>
+    <string name="eventName">Event Name</string>
+    <string name="Location">Location</string>
+    <string name="hint4">Enter location of event</string>
+    <string name="hint3">Enter a name for event</string>
+    <string name="selectDate">Select Date</string>
+    <string name="selectTime">Select Time</string>
+    <string name="create">Create event</string>
+    <string name="events">EVENTS</string>
+    <string name="error1">Please enter a valid code</string>
+    <string name="error2">Please enter a name</string>
+    <string name="error3">Please enter a location</string>
+    <string name="error4">Please enter a valid date</string>
+    <string name="error5">Please enter a valid Time</string>
+    <string name="error6">This unique code already exists</string>
+    <string name="msg1">Successful Creation</string>
+    <string name="msg2">Your response was recorded</string>
+    <string name="msg3">The event was successfully deleted</string>
+    <string name="deleteEvent">Remove event</string>
+    <string name="noEvent">Don\'t have an Event?</string>
+    <string name="rsvp">RSVP</string>
+    <string name="numberAttendeed">Number of attendees</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context="itp341.naruka.shatrujeet.finalprojectnarukashatrujeet.CreateEvent">
+
+<TextView
+    android:layout_width="144dp"
+    android:layout_height="48dp"
+    android:id="@+id/tv1"
+    android:gravity="center_vertical"
+    android:textColor="@color/blue"
+    android:textSize="22dp"
+    android:typeface="serif"
+    android:text="@string/uniqueCode"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textColorHint="@color/blue"
+    android:textColor="@color/blue"
+    android:hint="@string/hint2"
+    android:layout_toEndOf="@id/tv1"
+    android:id="@+id/editTextUnique"
+    android:backgroundTint="@color/blue"/>
+<TextView
+    android:layout_width="144dp"
+    android:layout_height="48dp"
+    android:id="@+id/tv2"
+    android:gravity="center_vertical"
+    android:textColor="@color/blue"
+    android:textSize="22dp"
+    android:layout_below="@id/tv1"
+    android:typeface="serif"
+    android:text="@string/eventName"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textColorHint="@color/blue"
+    android:textColor="@color/blue"
+    android:hint="@string/hint3"
+    android:layout_below="@id/editTextUnique"
+    android:id="@+id/editTextName"
+    android:layout_toEndOf="@id/tv2"
+    android:backgroundTint="@color/blue"/>
+
+<TextView
+    android:layout_width="144dp"
+    android:layout_height="48dp"
+    android:id="@+id/tv3"
+    android:gravity="center_vertical"
+    android:textColor="@color/blue"
+    android:textSize="22dp"
+    android:layout_below="@id/tv2"
+    android:typeface="serif"
+    android:text="@string/Location"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textColorHint="@color/blue"
+    android:hint="@string/hint4"
+    android:textColor="@color/blue"
+    android:layout_below="@id/editTextName"
+    android:id="@+id/editTextLocation"
+    android:layout_toEndOf="@id/tv3"
+    android:backgroundTint="@color/blue"/>
+
+
+<TextView
+    android:id="@+id/tv4"
+    android:layout_width="144dp"
+    android:layout_height="48dp"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/tv3"
+    android:gravity="center_vertical"
+    android:text="@string/selectTime"
+    android:textColor="@color/blue"
+    android:textSize="22dp"
+    android:typeface="serif" />
+
+<TimePicker
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    android:layout_toEndOf="@+id/tv4"
+    android:id="@+id/timePicker"
+    android:backgroundTint="@color/blue"
+    android:timePickerMode="spinner"
+    android:layout_alignTop="@id/tv4"></TimePicker>
+
+
+    <TextView
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:id="@+id/tv5"
+        android:text="@string/selectDate"
+        android:typeface="serif"
+        android:textSize="22dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/blue"
+        android:layout_below="@id/tv4"
+        />
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_alignTop="@id/tv5"
+        android:layout_toEndOf="@id/tv5"
+        android:calendarViewShown="false"
+        android:id="@+id/datePicker"
+        android:datePickerMode="spinner">
+
+
+    </DatePicker>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/blue"
+    android:textColor="@color/white"
+    android:typeface="serif"
+    android:text="@string/create"
+    android:textSize="24dp"
+    android:id="@+id/button" />
+
+</android.widget.RelativeLayout>
